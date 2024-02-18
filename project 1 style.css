@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.portfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    
+}
+.navbar{
+    display: flex;
+    gap: 3.5em;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+    position: fixed;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+.navbar li a:hover{
+    text-decoration: underline;
+    
+}
+.left, .right{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.left{
+    background: #262525;
+    width: 70%;
+    padding-left: 50px;
+}
+.right{
+    background:#262525;
+    width: 30%;
+}
+.icons .fa-brands{
+    color: #bbb;
+    font-size: 27px;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff,#3877FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content{
+    margin-left: 65px;
+}
+.content .intro{
+    font-size: 30px;
+    color: white;
+}
+.content h1{
+    font-size: 65px;
+    color: #5DB9EE;
+    position: relative;
+   
+}
+
+.content .intro span{
+    color: #5DB9EE
+}
+.content .detail{
+    font-size: 22px;
+    color: white;
+    max-width: 38rem;
+    margin: 16px 0px 48px 0px ; 
+    line-height: 32px;
+}
+.animated {
+  font-size: 65px;
+  color: #5DB9EE;
+  position: relative;
+  animation: slideRight 2s ease infinite; /* Adjusted duration to 2 seconds */
+}
+
+@keyframes slideRight {
+  0% {
+      opacity: 0;
+      transform: translateX(-50%); /* Adjusted distance */
+  }
+  50% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+  100% {
+      opacity: 0;
+      transform: translateX(50%); /* Adjusted distance */
+  }
+}
+
+
+.btn button{
+border: 2px solid #5DB9EE;
+font-size: 20px;
+padding: 13px 24px;
+border-radius: 8px;
+}
+.btn button:hover{
+    cursor: pointer;
+    background-color: #5DB9EE;
+    
+}
+button:nth-child(2){
+    margin-left: 30px;
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+}
+.circle:nth-child(1){
+    background: linear-gradient(transparent,#746e6e);
+    width: 38rem;
+}
+.circle:nth-child(2){
+    width: 33rem;
+    background-image: url("profile 1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 4rem #343232;
+}
+.education {
+    color: white;
+    font-size: 20px;
+    line-height: 1.4;
+    padding-bottom: 5rem;
+    background-color: #1f1e1e;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+
+.container {
+    padding: 90px;
+}
+
+.education-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    grid-gap: 90px;
+    margin-top: 50px;
+}
+
+.education-list div {
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 30px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px pink, 1px 1px 40px white;
+}
+
+.education-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.education-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.education-list div a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.education-list div:hover {
+    transform: translateY(10px);
+}
+
+.education .container .education-list h3 {
+    font-size: 20px;
+}
+
+.education .container .education-list h4 {
+    font-size: 15px;
+}
+
+  /* SKILL */
+  .skills {
+    display: grid;
+    flex-wrap: wrap;
+    background-image: radial-gradient;
+    background-color: #242424; 
+    color: white;
+  }
+  .container1 {
+    padding: 60px ;
+    padding-bottom: 120px;
+    
+  }
+  .skills .container1 .skill-list span{
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    grid-gap: 100px;
+    margin-top: 30px;
+  }
+  .single_box{
+    background-color: transparent;
+    padding: 20px 60px 20px 60px;
+    font-size: 18px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 30px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px pink, 1px 1px 40px white;
+  }
+  .single_box i {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .single_box span{
+    font-weight: 600;
+  }
+  
+  .single_box:hover {
+    transform: translateY(15px);
+  }
+  .heading1 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+  }
+  .single_box li{
+    margin:10px 0 10px;
+    padding:10px;
+  }
+  .percentage{
+    color: black;
+  }
+  .bar{
+    background: #434343;
+    display: block;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:0 1px -3px rgba(0, 0, 0, 0.185) ,0 1px 2px rgba(0, 0, 0, 0.256);
+    transition: all 0.3s cubic-bezier(.25 , .8 , .25 , 1);
+  }
+  
+  .bar span{
+    height: 20px;
+    float:left;
+    background: white;
+  }
+  
+  /* technical skills */
+  .HTML{
+    color: white;
+    width: 80%;
+    animation: HTML 3s;
+  }
+  .CSS{
+    width: 70%;
+    animation: CSS 3s;
+  }
+  .CPP{
+    width: 60%;
+    animation: CPP 3s;
+  }
+  @keyframes HTML{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 80%
+    }
+  }
+  @keyframes CSS{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 70%
+    }
+  }
+  @keyframes CPP{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 60%
+    }
+  }
+  
+footer {
+  background-color: #262525;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999; 
+  margin-top: 20px; 
+
+}
